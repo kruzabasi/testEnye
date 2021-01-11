@@ -29,7 +29,7 @@ function App({ initialData }) {
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
-      const res = await Axios.get("http://api.enye.tech/v1/challenge/records");
+      const res = await Axios.get("https://api.enye.tech/v1/challenge/records");
       setUserData(res.data.records.profiles);
       setLoading(false);
     };
