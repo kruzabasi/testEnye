@@ -14,7 +14,7 @@ const Pagination = ({
     pageNumbers.push(i);
   }
 
-  const pageClass = n => (currentPage == n ? "page-item" : "current-page-item");
+  const pageClass = n => (currentPage == n ? "current-page-item" : "page-item");
 
   return (
     <nav>

@@ -58,12 +58,12 @@ li {
 li:hover {
   border: solid 1px blanchedalmond;
 }
-.page-item {
+.current-page-item {
   background: blanchedalmond;
   color: black;
   border: solid 1px blanchedalmond;
 }
-.page-ite:hover {
+.current-page-item:hover {
   border: solid 0.3px rgb(116, 70, 70);
 }
 ul {
