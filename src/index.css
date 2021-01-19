@@ -55,6 +55,17 @@ li {
   border: solid 0.3px rgb(116, 70, 70);
   border-radius: 10px;
 }
+li:hover {
+  border: solid 1px blanchedalmond;
+}
+.page-item {
+  background: blanchedalmond;
+  color: black;
+  border: solid 1px blanchedalmond;
+}
+.page-ite:hover {
+  border: solid 0.3px rgb(116, 70, 70);
+}
 ul {
   list-style: none;
   display: flex;

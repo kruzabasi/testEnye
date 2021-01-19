@@ -5,6 +5,7 @@ const Pagination = ({
   totalPosts,
   paginate,
   viewAll,
+  currentPage,
   allData
 }) => {
   const pageNumbers = [];
@@ -13,11 +14,13 @@ const Pagination = ({
     pageNumbers.push(i);
   }
 
+  const pageClass = n => (currentPage == n ? "page-item" : "current-page-item");
+
   return (
     <nav>
       <ul className="pagination">
         {pageNumbers.map(number => (
-          <li key={number} className="page-item">
+          <li key={number} className={pageClass(number)}>
             <a onClick={() => paginate(number)} href="#" className="page-link">
               {number}
             </a>
