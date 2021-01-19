@@ -52,7 +52,7 @@ function App({ initialData }) {
   return (
     <div className={"mainApp"}>
       <h1>Enye Frontend (1.1)</h1>
-      This is a sample stateful and server-side rendered React application.
+      This is a sample stateful and client-side rendered React application.
       <br />
       <br />
       <Select
@@ -67,6 +67,7 @@ function App({ initialData }) {
         totalPosts={userData.length}
         viewAll={viewAll}
         allData={allData}
+        currentPage={currentPage}
       />
       <CardList
         paymentProp={payment}
@@ -75,6 +76,13 @@ function App({ initialData }) {
         testData={userData}
         loading={loading}
         paginated={currentPost}
+        allData={allData}
+      />
+      <Pagination
+        paginate={paginate}
+        postsPerPage={postsPerPage}
+        totalPosts={userData.length}
+        viewAll={viewAll}
         allData={allData}
       />
     </div>
