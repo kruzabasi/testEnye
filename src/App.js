@@ -84,6 +84,7 @@ function App({ initialData }) {
         totalPosts={userData.length}
         viewAll={viewAll}
         allData={allData}
+        currentPage={currentPage}
       />
     </div>
   );
